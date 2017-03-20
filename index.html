@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Justin Uzoije's Web Portfolio</title>
+    <title>Justin Uzoije</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -80,23 +80,90 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                  <a href="spiderman/spiderman.html">
+                  <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                       <img src="img/spiderman_black_white.jpg" class="img-responsive" alt="Spiderman">
                   </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                  <a href="blackjack/blackjack.html">
-                    <img src="img/42411251_m.jpg" class="img-responsive" alt="Black Jack">
+                  <a href="blackjack/index.html">
+                    <img src="img/blackjack.jpg" class="img-responsive" alt="Black Jack">
                   </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                  <a href="tictactoe/tictactoe.html">
-                    <img src="img/tic_tac_toe.jpg" class="img-responsive" alt="Tic Tac Toe">
+                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <img src="img/bulls_eye.jpeg" class="img-responsive" alt="Bull's Eye">
                   </a>
                 </div>
             </div>
         </div>
     </section>
+
+   <!--  Portfolio Modals Section -->
+
+   <!-- Portfolio Modal 1 -->
+   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Spiderman RPG</h2>
+                            <hr class="star-primary">
+                            <img src="img/spiderman_movie.gif" class="img-responsive img-centered" alt="">
+                            <p>In this game you move your character to the villain to fight them. <br> After defeating them you move on to the next level.</p>
+                            <ul class="list-inline item-details">
+                                <li>Language:
+                                    <strong>Python
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   	</div>
+
+   <!-- Portfolio Modal 2 -->
+   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Bull's Eye</h2>
+                            <hr class="star-primary">
+                            <img src="img/bulls_eye_movie.gif" class="img-responsive img-centered" alt="">
+                            <p>The object of this game is to move the target as close to the <br> number as possible. The closer you are, the more points you get.</p>
+                            <ul class="list-inline item-details">
+                                <li>Language:
+                                    <strong>Swift</strong>
+                                </li>
+                                <li>Platform:
+                                    <strong>iOS</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- About Section -->
     <section class="success" id="about">
@@ -128,75 +195,29 @@
             </div> -->
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
-                <p>I am a person who enjoys trying new and challenging things.
-                  I am also a hard worker who tries to always reach their goals.
-                  My experience working with developing different projects and
-                  apps with groups has helped me learn how to do things in
-                  the most efficient way possible. I also try to help each
-                  person contribute in a way that best utilizes their individual
-                  talents.</p>
-                </div>
+                <p>I am a person who enjoys trying new and challenging things. 
+                My experience working with groups developing different projects 
+                has helped me learn how to do things in a way that allows each person
+                to contribute so that everyone's individual talents are best utilized. 
+								In my free time I like playing Magic: The Gathering and talking about movies.
+                </p>
+              </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <!-- <section class="success" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <p>I am a person who enjoys trying new and challenging things.
-                  I am also a hard worker who tries to always reach their goals.
-                  My experience working with developing different projects and
-                  apps with groups has helped me learn how to do things in
-                  the most efficient way possible. I also try to help each
-                  person contribute in a way that best utilizes their individual
-                  talents.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <!-- <hr class="star-primary"> -->
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-              <!-- <div class="col-lg-8 col-lg-offset-2"> -->
-              <div class="col-sm-3 portfolio-item">
-                <a href="http://www.github.com">
-                  <img class="img-responsive" src="img/github.png" alt="Git Hub">
-                </a>
-              </div>
-              <div class="col-sm-3 portfolio-item">
-                <a href="http://www.linkedin.com">
-                  <img class="img-responsive" src="img/linkedin.png" alt="Linked In">
-                </a>
-              </div>
-              <div class="col-sm-3 portfolio-item">
-                <a href="http://www.resume.com">
-                  <img class="img-responsive" src="img/resume.png" alt="Resume">
-                </a>
-              </div>
-              <div class="col-sm-3 portfolio-item">
-                <a href="http://www.gmail.com">
-                  <img class="img-responsive" src="img/email.png" alt="Email">
-                </a>
-              </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-5 text-center">
+						<a class="inline_block" href="http://www.github.com/justinuzoije"><div class="guithub-roll social-roll"><img class="img-responsive" src="img/github.png" alt="Git Hub"></div></a>
+   					<a class="inline_block" href="http://www.linkedin.com/in/justin-uzoije"><div class="linkedin-roll social-roll"><img class="img-responsive" src="img/linkedin.png" alt="Linked In"></div></a>
+            <a class="inline_block" href="resume/JustinUzoije.pdf"><div class="resume-roll social-roll"><img class="img-responsive" src="img/resume.png" alt="Resume"></div></a>
+            <a class="inline_block" href="mailto:justinuzoije@egmail.com"><div class="email-roll social-roll"><img class="img-responsive" src="img/email.png" alt="Email"></div></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- jQuery -->

@@ -91,6 +91,9 @@ header .intro-text .skills {
   color: #00BE9B;
 }
 
+
+
+
 #about {
   /*Green*/
   background: #00BE9B;
@@ -100,6 +103,32 @@ header .intro-text .skills {
 #contact {
   color: #00BE9B;
 }
+
+
+/*ul
+{
+list-style-type: none;
+}*/
+
+.inline_block{
+display: inline-block;;
+}
+
+.social-roll {
+height: 30px;
+width: 30px;
+margin: 10px;
+border-radius: 50%;
+-webkit-transition: all ease 0.3s;
+-moz-transition: all ease 0.3s;
+-o-transition: all ease 0.3s;
+-ms-transition: all ease 0.3s;
+transition: all ease 0.3s;
+  /*border: 1px solid red;*/
+  /*border: 1px solid red;*/
+}
+
+
 
 /*Color of the Collapsable Nav Bar*/
 .navbar-default {
