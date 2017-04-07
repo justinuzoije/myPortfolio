@@ -16,9 +16,20 @@
 
     <!-- Google Font for Lato -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script>
+    $('.navbar-collapse ul li a').click(function(){
+            $('.navbar-toggle:visible').click();
+    });
+    </script>
+
+
   </head>
 
-  <body>
+  <!-- <body> -->
+  <body id="page-top" class="index">
+  <div id="skipnav"><a href="#maincontent">Click here to go to the main content</a></div>
+
 
     <!-- Navigation Bar-->
     <!-- This is the Bootstrap navigation bar modified, so the class has to be navbar -->
@@ -62,7 +73,7 @@
                     <img class="img-responsive" src="img/face.png" alt="">
                     <div class="intro-text">
                         <h1 class="name">Justin Uzoije</h1>
-                        <hr class="star-light">
+                        <hr>
                         <span class="skills">Web Developer</span>
                     </div>
                 </div>
@@ -76,7 +87,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Projects</h2>
-                    <hr class="star-primary">
+                    <hr>
                 </div>
             </div>
             <div class="row">
@@ -86,12 +97,12 @@
                   </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                  <a href="blackjack/index.html">
-                    <img src="img/blackjack.jpg" class="img-responsive" alt="Black Jack">
+                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                      <img src="img/blackjack.jpg" class="img-responsive" alt="Black Jack">
                   </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                     <img src="img/bulls_eye.jpeg" class="img-responsive" alt="Bull's Eye">
                   </a>
                 </div>
@@ -115,13 +126,16 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Spiderman RPG</h2>
-                            <hr class="star-primary">
+                            <hr>
                             <img src="img/spiderman_movie.gif" class="img-responsive img-centered" alt="">
                             <p>In this game you move your character to the villain to fight them. <br> After defeating them you move on to the next level.</p>
                             <ul class="list-inline item-details">
                                 <li>Language:
                                     <strong>Python
                                     </strong>
+                                </li>
+                                <li>
+                                  <strong><a class="modal-link" href="https://github.com/justinuzoije/BullsEye" target="_blank">GitHub</a></strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -132,8 +146,45 @@
         </div>
    	</div>
 
-   <!-- Portfolio Modal 2 -->
-   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-content">
+             <div class="close-modal" data-dismiss="modal">
+                 <div class="lr">
+                     <div class="rl">
+                     </div>
+                 </div>
+             </div>
+             <div class="container">
+                 <div class="row">
+                     <div class="col-lg-8 col-lg-offset-2">
+                         <div class="modal-body">
+                             <h2>Blackjack</h2>
+                             <hr>
+                             <img src="img/blackjack_screen.jpg" class="img-responsive img-centered" alt="">
+                             <p>This is the classic card game Blackjack (aka 21).</p>
+                             <ul class="list-inline item-details">
+                                 <li>Languages:
+                                     <strong>HTML, CSS, JavaScript, and jQuery
+                                     </strong>
+                                 </li>
+                                 <li>
+                                   <strong><a class="modal-link" href="https://github.com/justinuzoije/blackjack" target="_blank">GitHub</a></strong>
+                                 </li>
+                                 <li>
+                                   <strong><a class="modal-link" href="http://justinuzoije.com/blackjack/index.html" target="_blank">Live Demo</a></strong>
+                                 </li>
+                             </ul>
+                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+   <!-- Portfolio Modal 3 -->
+   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -146,7 +197,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>Bull's Eye</h2>
-                            <hr class="star-primary">
+                            <hr>
                             <img src="img/bulls_eye_movie.gif" class="img-responsive img-centered" alt="">
                             <p>The object of this game is to move the target as close to the <br> number as possible. The closer you are, the more points you get.</p>
                             <ul class="list-inline item-details">
@@ -155,6 +206,9 @@
                                 </li>
                                 <li>Platform:
                                     <strong>iOS</strong>
+                                </li>
+                                <li>
+                                  <strong><a class="modal-link" href="https://github.com/justinuzoije/spiderman-game" target="_blank">GitHub</a></strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -172,7 +226,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>About</h2>
-                    <hr class="star-light">
+                    <hr>
                 </div>
             </div>
             <!-- <div class="row">
@@ -200,30 +254,79 @@
                 I have a lot of experience developing projects in groups. This has
                 taught me the value of teamwork, and how to distribute and organize
                 tasks to best utilize each person's individual talent. I am looking for a development job where I can use my passion for
-                programming and knowledge of design to make web applications that make
-                finding information on the web easier.
+                programming and knowledge of design to make finding information on the web easier.
                 <br>
                 <br>
 								In my free time I like playing Magic: The Gathering and talking about movies.
                 </p>
+                <br>
               </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-md-offset-5 text-center">
-						<a class="inline_block" href="http://www.github.com/justinuzoije"><div class="guithub-roll social-roll"><img class="img-responsive" src="img/github.png" alt="Git Hub"></div></a>
-   					<a class="inline_block" href="http://www.linkedin.com/in/justin-uzoije"><div class="linkedin-roll social-roll"><img class="img-responsive" src="img/linkedin.png" alt="Linked In"></div></a>
-            <a class="inline_block" href="resume/Justin_Uzoije_Resume_2017.pdf"><div class="resume-roll social-roll"><img class="img-responsive" src="img/resume.png" alt="Resume"></div></a>
-            <a class="inline_block" href="mailto:justinuzoije@gmail.com"><div class="email-roll social-roll"><img class="img-responsive" src="img/email.png" alt="Email"></div></a>
+						<a class="inline_block" href="http://www.github.com/justinuzoije" target="_blank"><div class="guithub-roll social-roll"><img class="img-responsive" src="img/github.png" alt="Git Hub"></div></a>
+   					<a class="inline_block" href="http://www.linkedin.com/in/justin-uzoije" target="_blank"><div class="linkedin-roll social-roll"><img class="img-responsive" src="img/linkedin.png" alt="Linked In"></div></a>
+            <a class="inline_block" href="resume/Justin_Uzoije_Resume_2017.pdf" target="_blank"><div class="resume-roll social-roll"><img class="img-responsive" src="img/resume.png" alt="Resume"></div></a>
+            <a class="inline_block" href="mailto:justinuzoije@gmail.com" target="_blank"><div class="email-roll social-roll"><img class="img-responsive" src="img/email.png" alt="Email"></div></a>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- New and Better Footer -->
+    <!-- Footer -->
+    <!-- <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>3481 Melrose Place
+                            <br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About Something or other</h3>
+                        <p>Bla bla bla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Justin Uzoije 2017
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 
     <!-- jQuery -->
     <script src="jquery/jquery.min.js"></script>

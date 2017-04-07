@@ -56,6 +56,18 @@ a.active {
   color: white;
 }
 
+.modal-link {
+  color: black;
+
+}
+
+.modal-link:hover {
+  color: #00BE9B;
+  text-decoration: none;
+}
+
+
+
 header {
   text-align: center;
   /*Green*/
@@ -87,9 +99,7 @@ header .intro-text .skills {
   color: #00BE9B;
 }
 
-.star-primary {
-  color: #00BE9B;
-}
+
 
 
 
