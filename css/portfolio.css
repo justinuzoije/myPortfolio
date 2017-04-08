@@ -11,40 +11,18 @@ h1 {
   font-size: 200px;
 }
 
-/*Makes upper left text white*/
-/*.navbar-default .navbar-brand {
-  color: white;
-}*/
 
 .page-scroll li {
   color: white;
 }
 
 
-/*#bs-example-navbar-collapse-1 {
-  color: white;
-}*/
-
-/*.page-scroll {
-  color: white;
-}*/
-
-/*.collapse navbar-collapse {
-  color: white;
-}*/
-
-/*#mainNav {*/
-  /*background-color: #004E64;*/
-  /*Blue*/
-  /*background-color: #2C3E51;
-}*/
 
 .page-scroll {
   color: white;
 }
 
 .navbar-brand {
-  /*color: white;*/
   font-size: 20px;
 }
 
@@ -94,9 +72,12 @@ header .intro-text .skills {
   font-weight: 300;
 }
 
+
+
 #portfolio {
   background-color: white;
   color: #00BE9B;
+  margin-bottom: 50px;
 }
 
 
@@ -110,6 +91,7 @@ header .intro-text .skills {
   color: white;
 }
 
+
 #contact {
   color: #00BE9B;
 }
@@ -122,6 +104,11 @@ list-style-type: none;
 
 .inline_block{
 display: inline-block;;
+}
+
+.footer {
+  margin-bottom: 50px;
+
 }
 
 .social-roll {
@@ -138,6 +125,18 @@ transition: all ease 0.3s;
   /*border: 1px solid red;*/
 }
 
+.btn-social {
+  color: white;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 45px;
+  background: black;
+}
 
 
 /*Color of the Collapsable Nav Bar*/
